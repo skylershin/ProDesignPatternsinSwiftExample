@@ -55,6 +55,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="stockLevelDidChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Zmc-Tf-hJj"/>
+                                                    </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uO-bE-Gca">
                                                     <rect key="frame" x="8" y="7" width="294" height="30"/>
@@ -67,6 +70,9 @@
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="M8H-FN-VGd">
                                                     <rect key="frame" x="335" y="8" width="94" height="29"/>
+                                                    <connections>
+                                                        <action selector="stockLevelDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="oi2-fU-vz0"/>
+                                                    </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfq-Xd-Pho">
                                                     <rect key="frame" x="8" y="54" width="544" height="21"/>
