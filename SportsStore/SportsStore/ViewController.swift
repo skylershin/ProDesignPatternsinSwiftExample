@@ -76,8 +76,12 @@ class ViewController: UIViewController, UITableViewDataSource {
                 )
         })
         
+        var factory = StockTotalFactory.getFactory(StockTotalFactory.Currency.GBP)
+        var totalAmount = factory.converter?.convertTotal(finalTotals.1)
+        var formmated = factory.formatter?.formatTotal(totalAmount!)
+        
         totalStockLabel.text = "\(finalTotals.0) Products in Stock"
-        + "Total Value: \(Utils.currencyStringFromNumber(finalTotals.1))"
+        + "Total Value: \(formmated!)"
     }
     
     @IBAction func stockLevelDidChanged(sender: AnyObject) {
